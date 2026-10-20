@@ -5,7 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Dhrukumar Valand – Data Analyst for Power BI, Microsoft Fabric and business intelligence.">
 <title>Dhrukumar Valand</title>
-<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}.more{margin-top:clamp(3rem,6vw,4.5rem);border-top:1px solid var(--line);padding-top:clamp(2.5rem,5vw,3.5rem)}
+.more h3{font-size:clamp(1.3rem,2.5vw,1.6rem);font-weight:700;margin-bottom:.4rem}
+.more-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:1.5rem}
+.mcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;display:flex;flex-direction:column;gap:.8rem;min-width:0}
+.mcard h4{font-size:1.1rem;font-weight:700;line-height:1.3}
+.mcard p{color:var(--muted);font-size:.95rem;line-height:1.55}
+.mcard .stat{font-family:var(--f-mono);font-size:.8rem;color:var(--ink);background:var(--sunk);border-radius:6px;padding:.5rem .6rem}
+.mcard .btn{margin-top:auto;align-self:flex-start}
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -506,6 +514,35 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
           <p class="lede" style="font-size:.95rem">Why it matters for a business role: I know how to test whether a pattern is real before it goes into a report or a decision.</p>
         </div>
       </article>
+    </div>
+
+    <div class="more" id="more-projects">
+      <span class="eyebrow">More projects</span>
+      <h3>Analytics, operations and quant projects in Python</h3>
+      <p class="lede">Smaller projects, each solving one concrete problem end to end. All data is simulated.</p>
+      <div class="more-grid">
+        <article class="mcard">
+          <div class="case-tag"><span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">Process mining</span></div>
+          <h4>Data Detective: finding the cause of future revenue loss</h4>
+          <p>Revenue fell 14.7% and nobody knew why. I compared versioned data snapshots (Delta Lake time-travel idea), mined 75,700 order-to-cash events and trained a churn model with an out-of-time backtest.</p>
+          <p class="stat">AUC 0.76 · one region = 24% of customers, 41% of revenue at risk · root cause: late deliveries</p>
+          <a class="btn btn-ghost" href="https://github.com/Dhrukumar23/dhrukumar23.github.io/tree/main/projects/data-detective-revenue-loss" target="_blank" rel="noopener">Code on GitHub ↗</a>
+        </article>
+        <article class="mcard">
+          <div class="case-tag"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">FX / STP</span></div>
+          <h4>FX Client Operations Toolkit</h4>
+          <p>Reconciles trades between an FX trading platform and a client's treasury system, analyses 1,500 client requests for SLA breaches and finds the bottleneck in client onboarding.</p>
+          <p class="stat">116/116 trade breaks found · interface issues = 14% of requests but 52% of SLA breaches</p>
+          <a class="btn btn-ghost" href="https://github.com/Dhrukumar23/dhrukumar23.github.io/tree/main/projects/fx-client-operations-toolkit" target="_blank" rel="noopener">Code on GitHub ↗</a>
+        </article>
+        <article class="mcard">
+          <div class="case-tag"><span class="chip">Python</span><span class="chip">NumPy / SciPy</span><span class="chip">Risk</span></div>
+          <h4>Option Pricing &amp; Risk Toolkit</h4>
+          <p>Black-Scholes pricing with Greeks, Monte Carlo simulation, implied volatility, portfolio Value at Risk and Expected Shortfall, and PRIIPs-style performance scenarios.</p>
+          <p class="stat">Monte Carlo within ±0.03 of Black-Scholes · 1-day 99% VaR on a EUR 1m portfolio</p>
+          <a class="btn btn-ghost" href="https://github.com/Dhrukumar23/dhrukumar23.github.io/tree/main/projects/option-pricing-risk-toolkit" target="_blank" rel="noopener">Code on GitHub ↗</a>
+        </article>
+      </div>
     </div>
   </div>
 </section>
